@@ -3,7 +3,7 @@
 }
 
 :root {
-    --bg-color: #fff;
+    --header-color: #fff;
     --primary-color: #152427;
     --secondary-color: #143c3c;
 }
@@ -67,7 +67,7 @@ a:active {
 .header {
     height: 100vh;
     padding: 28px 24px 0;
-    background-color: var(--bg-color);
+    background-color: var(--header-color);
 }
 
 .navbar {
@@ -93,7 +93,7 @@ a:active {
 }
 
 .navbar__logo {
-    color: var(--bg-color);
+    color: var(--header-color);
 }
 
 .navbar__list {
@@ -156,7 +156,7 @@ a:active {
 .hero__video {
     margin-left: 36px;
     border: none;
-    background-color: #fff;
+    background-color: var(--header-color);
     padding: 0;
     cursor: pointer;
 }
@@ -208,7 +208,7 @@ a:active {
     margin-top: 60px;
     margin-right: 23px;
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     width: 646px;
     height: 543px;
 }
@@ -225,13 +225,19 @@ a:active {
     background: #4dbb9a;
     filter: blur(137px);
 }
-.hero__images .img-block {
+.img-block {
+    margin-right: 20px;
+    flex: 1;
     position: relative;
     height: 466px;
 }
 
-.hero__images .img-block:nth-of-type(2) {
+.img-block:nth-of-type(2) {
     align-self: flex-end;
+}
+
+.img-block:last-of-type {
+    margin-right: 0;
 }
 
 .img-block__item {
@@ -239,4 +245,83 @@ a:active {
     height: 466px;
     object-fit: cover;
     border-radius: 110px;
+}
+
+.icon-first__head {
+    position: absolute;
+    transform: translateX(-100%) rotate(9.392deg);
+    left: -136px;
+    top: -29px;
+}
+.icon-first__body {
+    position: absolute;
+    left: -172px;
+    top: -32px;
+}
+
+.icon-second__head {
+    position: absolute;
+    transform: translateX(-100%) rotate(-174.659deg);
+    right: -63px;
+    bottom: -64px;
+}
+.icon-second__body {
+    position: absolute;
+    transform: rotate(175.95deg);
+    left: 31px;
+    bottom: -87px;
+}
+
+/* Logo sponsor */
+.logo {
+    margin: 42px 0;
+}
+
+.logo__sponsor {
+    font-family: "Poppins", sans-serif;
+    border-radius: 999px;
+    background-color: #e2eddf;
+    padding: 85px 121px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__sponsor-item {
+    display: flex;
+    align-items: center;
+}
+
+.logo__sponsor--google {
+    color: var(--secondary-color);
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.logo__sponsor--slack {
+    color: var(--secondary-color);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.logo__sponsor--agworld {
+    margin-left: 11px;
+    color: #163c35;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.logo__sponsor--riotinto {
+    color: var(--secondary-color);
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.logo__sponsor--heroku {
+    margin-left: 14px;
+    color: var(--secondary-color);
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
 }
