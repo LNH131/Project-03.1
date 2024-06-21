@@ -6,6 +6,8 @@
     --header-color: #fff;
     --primary-color: #152427;
     --secondary-color: #143c3c;
+    --third-color: #e2eddf;
+    --title-color: #152427;
 }
 
 html {
@@ -50,6 +52,15 @@ a:active {
     opacity: 0.9;
 }
 
+.section-heading {
+    position: relative;
+    color: var(--title-color);
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
 .section-desc {
     margin-top: 20px;
     color: #575d5e;
@@ -61,6 +72,37 @@ a:active {
 .row {
     display: flex;
     align-items: center;
+}
+
+.title {
+    position: relative;
+    margin-left: 46px;
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -21px;
+    transform: translateY(-50%) translateX(-100%);
+    width: 25px;
+    height: 1px;
+    background: var(--title-color);
+}
+
+.line {
+    margin-left: 18px;
+    margin-bottom: 6px;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: var(--title-color);
 }
 
 /* Header */
@@ -280,7 +322,7 @@ a:active {
 .logo__sponsor {
     font-family: "Poppins", sans-serif;
     border-radius: 999px;
-    background-color: #e2eddf;
+    background-color: var(--third-color);
     padding: 85px 121px;
     display: flex;
     align-items: center;
@@ -324,4 +366,41 @@ a:active {
     font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: 1.995px;
+}
+
+/* Service */
+.service {
+    margin-top: 32px;
+    padding-top: 32px;
+}
+
+.service__heading {
+    width: 520px;
+}
+
+.service__action {
+    gap: 17px;
+    margin: 25px 76px 0 auto;
+}
+
+.service__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.service__btn:first-child {
+    transform: rotate(180deg);
+}
+
+.service__btn:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
 }
