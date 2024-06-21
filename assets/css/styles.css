@@ -128,44 +128,48 @@ a:active {
 }
 
 .hero {
-    margin: 60px 25px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero__info {
-    width: 378px;
+    width: 393px;
 }
 
 .hero__heading {
-    font-size: 5rem;
+    width: 368px;
+    font-size: 4.9rem;
     font-weight: 800;
     line-height: 1.2;
     color: #152427;
+}
+
+.hero__desc {
+    width: 341px;
 }
 
 .hero__row {
     margin-top: 42px;
 }
 
-.hero__cta {
-    display: inline-block;
-    margin-right: 36px;
-}
-
 .hero__video {
+    margin-left: 36px;
     border: none;
     background-color: #fff;
+    padding: 0;
     cursor: pointer;
 }
 
-.hero__video:hover .hero__play-border {
+.hero__video:hover .hero__video--border {
     transform: rotate(135deg);
 }
 
-.hero__video:hover .hero__play-text {
+.hero__video:hover .hero__video--text {
     opacity: 0.8;
 }
 
-.hero__play-border {
+.hero__video--border {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +183,7 @@ a:active {
         var(--secondary-color);
 }
 
-.hero__play-btn {
+.hero__video--round {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,11 +194,49 @@ a:active {
     background-color: #83a17d;
 }
 
-.hero__play-text {
-    margin-left: 15px;
+.hero__video--text {
+    margin-left: 8px;
     color: #152427;
     font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66;
+}
+
+.hero__images {
+    position: relative;
+    margin-top: 60px;
+    margin-right: 23px;
+    display: flex;
+    gap: 20px;
+    width: 646px;
+    height: 543px;
+}
+
+.hero__eclipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    border-radius: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+}
+.hero__images .img-block {
+    position: relative;
+    height: 466px;
+}
+
+.hero__images .img-block:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.img-block__item {
+    width: 100%;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
 }
