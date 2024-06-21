@@ -8,6 +8,7 @@
     --secondary-color: #143c3c;
     --third-color: #e2eddf;
     --title-color: #152427;
+    --desc-color: #7d8188;
 }
 
 html {
@@ -20,11 +21,6 @@ body {
 }
 
 /* Common */
-.container {
-    /* width: 1140px; */
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 a {
     text-decoration: none;
@@ -52,26 +48,42 @@ a:active {
     opacity: 0.9;
 }
 
-.section-heading {
-    position: relative;
-    color: var(--title-color);
-    font-family: Poppins;
-    font-size: 4.2rem;
-    font-weight: 600;
-    line-height: 1.23;
+.container {
+    /* width: 1140px; */
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-.section-desc {
-    margin-top: 20px;
-    color: #575d5e;
-    font-size: 1.8rem;
+.desc {
+    color: var(--desc-color);
+    font-family: Poppins;
     font-weight: 500;
+}
+
+.desc-level-1 {
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.desc-level-2 {
+    font-size: 1.6rem;
+    line-height: 1.62;
+}
+
+.desc-level-3 {
+    color: #575d5e;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
     line-height: 1.55;
 }
 
-.row {
-    display: flex;
-    align-items: center;
+.line {
+    margin-left: 18px;
+    margin-bottom: 6px;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: var(--title-color);
 }
 
 .title {
@@ -96,13 +108,26 @@ a:active {
     background: var(--title-color);
 }
 
-.line {
-    margin-left: 18px;
-    margin-bottom: 6px;
-    display: inline-block;
-    width: 66px;
-    height: 2px;
-    background-color: var(--title-color);
+.section-heading {
+    position: relative;
+    color: var(--title-color);
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.row {
+    display: flex;
+    align-items: center;
 }
 
 /* Header */
@@ -188,6 +213,7 @@ a:active {
 }
 
 .hero__desc {
+    margin-top: 20px;
     width: 341px;
 }
 
@@ -401,6 +427,52 @@ a:active {
 }
 
 .service__btn:hover {
+    cursor: pointer;
     color: #fff;
     background-color: var(--secondary-color);
+}
+
+.service-list {
+    margin-top: 76px;
+    display: flex;
+    gap: 16px;
+}
+
+.service-item {
+    flex: 1;
+    height: 477px;
+}
+
+.service-item:hover {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    cursor: pointer;
+}
+
+.service-item:hover .service-item__title,
+.service-item:hover .service-item__desc {
+    transition: 0.5s;
+    margin-left: 18px;
+}
+
+.service-item__thumb {
+    width: 100%;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service-item__title {
+    margin-top: 24px;
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    width: 268px;
 }
