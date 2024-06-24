@@ -401,6 +401,7 @@ a:active {
 }
 
 .service__heading {
+    margin-top: 12px;
     width: 520px;
 }
 
@@ -518,4 +519,247 @@ a:active {
     transform: rotate(12.645deg);
     stroke-width: 1px;
     stroke: #000;
+}
+
+.about-row {
+    align-items: normal;
+}
+
+.card {
+    position: absolute;
+    bottom: -8px;
+    right: -9px;
+    width: 143px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.card_info {
+    padding: 19px 23px 11px;
+}
+
+.card__title {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.card__desc {
+    margin-top: 6px;
+    opacity: 0.4;
+    color: #575d5e;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.card__percent {
+    display: flex;
+    margin-top: 10px;
+    color: var(--primary-color27);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.card__line {
+    position: relative;
+    margin-top: 3px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.card__line--green {
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.card__loading,
+.card__team {
+    margin-top: 3px;
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.card__row {
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.card__avt {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.card__avt {
+    margin-left: -6px;
+}
+
+.about__info {
+    width: 485px;
+    margin-left: auto;
+}
+
+.about__title {
+    line-height: 1.12;
+}
+
+.about__heading {
+    margin-top: 20px;
+}
+
+.about__desc {
+    margin-top: 11px;
+    color: #7d8188;
+}
+
+.about__percent {
+    margin-right: 24px;
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.about__row {
+    margin-top: 36px;
+    margin-bottom: 58px;
+    position: relative;
+}
+
+.about__row:last-of-type {
+    margin-bottom: 0;
+}
+
+.about__row::after {
+    position: absolute;
+    bottom: -20px;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #83a17d;
+}
+
+/* Process */
+.process {
+    padding: 36px 0;
+    margin-top: 79px;
+}
+
+.process_title {
+    display: inline-block;
+}
+
+.process__heading {
+    margin-top: 20px;
+    width: 490px;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.25s;
+    border-radius: 33px;
+    height: 185px;
+    background: #fff;
+}
+
+.process__item::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+    height: 3px;
+    width: 100%;
+}
+
+.process__item:hover {
+    background: var(--third-color);
+}
+
+.process__item:hover::after {
+    display: none;
+}
+
+.process__item:hover .process__learn-more {
+    display: block;
+}
+
+.process__item:hover .process__desc {
+    display: none;
+}
+
+.process__item:hover .process__img {
+    display: inline-block;
+}
+
+.process__index {
+    margin-left: 30px;
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 0.72;
+}
+
+.process__info {
+    margin-left: 64px;
+}
+
+.process__title {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.process__learn-more {
+    display: none;
+    margin-top: 22px;
+    color: #575d5e;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.process__learn-more:hover {
+    text-decoration: underline;
+}
+
+.process__desc {
+    margin: 0 41px 0 175px;
+    width: 572px;
+}
+
+.process__img {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    right: 92px;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
 }
