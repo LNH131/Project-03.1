@@ -991,3 +991,136 @@ a:active {
     border-top: 1px solid #c4c4c4;
     transition: 0.25s;
 }
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    margin-top: 45px;
+    padding: 72px 0 50px;
+}
+
+.footer__row {
+    justify-content: space-between;
+}
+
+.footer__heading {
+    color: var(--text-color-white, #fff);
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.footer-form {
+    position: relative;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.footer-form::after {
+    position: absolute;
+    bottom: -36px;
+    content: "";
+    display: inline-block;
+    width: 85%;
+    height: 1px;
+    background-color: #6a8383;
+}
+
+.footer-form__input {
+    padding-right: 4px;
+    margin-right: 8px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.social {
+    margin-top: 84px;
+    gap: 22px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #265252;
+    width: 52px;
+    height: 52px;
+}
+
+.social-icon:hover {
+    transition: 0.25s;
+    background-color: #a75325;
+    cursor: pointer;
+}
+
+.social-icon__instagram--square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.27px;
+    height: 18.27px;
+    border-radius: 3px;
+    border: 2px solid #fcfcfc;
+}
+
+.social-icon__instagram--round {
+    width: 7.03px;
+    height: 7.03px;
+    border-radius: 50%;
+    border: 1px solid #fcfcfc;
+}
+
+.footer-list {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-item__title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.footer-item__link {
+    display: block;
+    color: #6a8383;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+}
+
+.footer-item__link:first-of-type {
+    margin-top: 6px;
+}
+
+.footer-item__link:hover {
+    text-decoration: underline;
+}
+
+.footer__line {
+    margin-top: 55px;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #143c3c 2.28%,
+        #295a5a 55.65%,
+        rgba(38, 82, 82, 0) 102.06%
+    );
+    height: 1px;
+}
+
+.footer__copyright {
+    margin-top: 20px;
+    text-align: center;
+    color: #b0b5b4;
+    font-family: Poppins;
+    font-size: 1.8rem;
+}
