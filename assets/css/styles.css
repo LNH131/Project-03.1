@@ -11,6 +11,11 @@
     --desc-color: #7d8188;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -490,6 +495,7 @@ a:active {
 
 /* About */
 .about {
+    scroll-margin-top: 100px;
     margin-top: 52px;
     padding: 52px 0;
 }
@@ -903,6 +909,7 @@ a:active {
 
 /* Blog */
 .blog {
+    scroll-margin-top: 100px;
     padding: 57px 0;
     margin-top: 57px;
 }
